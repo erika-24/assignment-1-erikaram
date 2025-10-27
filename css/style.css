@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: ghostwhite;
+}
+
+.quiz-container {
+    background-color: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#question {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#next-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
