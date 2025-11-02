@@ -31,6 +31,12 @@ const questionElement = document.getElementById("question");
 const optionsElements = document.querySelectorAll(".option");
 const nextButton = document.getElementById("next-button");
 
+optionsElements.forEach((button, index) => {
+  button.addEventListener('click', () => selectAnswer(index));
+});
+
+nextButton.addEventListener("click", nextQuestion)
+
 function loadQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
